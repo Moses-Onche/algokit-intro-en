@@ -5,7 +5,7 @@ async function main() {
     const algorandUser = algokit.AlgorandClient.defaultLocalNet();
 
     let user1 = algorandUser.account.random();
-    console.log(user1.addr);
+    console.log("User's address: " + user1.addr);
 }
 
 main();
