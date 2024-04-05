@@ -1,7 +1,11 @@
 import * as algokit from '@algorandfoundation/algokit-utils';
 
 async function main() {
-    console.log('Code goes here!')
+    // Create random user accounts
+    const algorandUser = algokit.AlgorandClient.defaultLocalNet();
+
+    let user1 = algorandUser.account.random();
+    console.log(user1.addr);
 }
 
 main();
